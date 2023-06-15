@@ -9,7 +9,7 @@ metadata:
 
 spec:
     rules:
-        - host: ticketing.dev
+        - host: www.ms-ticketing-system-prod.xyz
           http:
               paths:
                   - path: /api/payments/?(.*)
