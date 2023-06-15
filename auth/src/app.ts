@@ -1,6 +1,6 @@
 const express = require('express');
 import 'express-async-errors';
-import cookieSeesion from 'cookie-session';
+import cookieSession from 'cookie-session';
 import { errorHandler, NotFoundError } from '@omticketorg/common';
 
 const { currentUserRouter } = require('./routes/current-user');
@@ -16,7 +16,7 @@ app.set('trust proxy', true);
 app.use(express.json());
 
 app.use(
-    cookieSeesion({
+    cookieSession({
         signed: false,
         // secure: process.env.NODE_ENV !== 'test',
         secure: false,
